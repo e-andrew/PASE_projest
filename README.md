@@ -1,7 +1,7 @@
 # PASE_projest
 
-# Goal
+## Goal
 
-# Technologies Stack
+## Technologies Stack
 
-# Developers
+## Developers
