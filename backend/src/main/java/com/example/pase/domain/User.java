@@ -19,6 +19,9 @@ public class User extends BaseEntity{
     @Column(name = "email")
     private String email;
 
+    @Column(name = "password")
+    private String password;
+
     @Column(name = "nickname")
     private String nickname;
 
@@ -29,7 +32,7 @@ public class User extends BaseEntity{
     private Set<Role> roles;
 
     @Column(name = "mobile_number")
-    private long mobileNumber;
+    private String mobileNumber;
 
     public String getFirstName() {
         return firstName;
@@ -63,6 +66,14 @@ public class User extends BaseEntity{
         this.email = email;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public String getNickname() {
         return nickname;
     }
@@ -79,11 +90,11 @@ public class User extends BaseEntity{
         this.roles = roles;
     }
 
-    public long getMobileNumber() {
+    public String getMobileNumber() {
         return mobileNumber;
     }
 
-    public void setMobileNumber(long mobileNumber) {
+    public void setMobileNumber(String mobileNumber) {
         this.mobileNumber = mobileNumber;
     }
 }
