@@ -20,13 +20,14 @@ public class UserController {
 
     @PostMapping("/user/register")
     public User register(User user) {
-        user = new User();
-        user.setFirstName("Oleksii");
-        user.setLastName("Krasnovskyi");
-        user.setMiddleName("Something");
-        user.setEmail("123@gmail.com");
-        user.setNickname("dem14n");
-        user.setMobileNumber("8-800-555-35-35");
+//        user = new User();
+//        user.setFirstName("Oleksii");
+//        user.setLastName("Krasnovskyi");
+//        user.setMiddleName("Something");
+//        user.setEmail("123@gmail.com");
+//        user.setNickname("dem14n");
+//        user.setPassword("P@ssw0rd");
+//        user.setMobileNumber("8-800-555-35-35");
         return userService.register(user);
     }
 
